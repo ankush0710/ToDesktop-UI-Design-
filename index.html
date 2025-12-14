@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <!-- Responsive navigation bar -->
     <nav class="md:bg-white p-5 flex justify-between items-center">
-        <div class="flex items-center gap-2">
+        <div class="flex flex-1 items-center gap-2">
             <a href="#"><img class="max-w-10 max-h-10 object-cover" src="./Images/logo.png" alt="logo"></a>
             <a href="#"><span class="font-bold text-black text-lg">ToDesktop</span></a>
         </div>
@@ -22,12 +23,14 @@
             <a href="#" class="font-semibold text-black text-lg hover:text-[#3238F2]">Blog</a>
             <a href="#" class="font-semibold text-black text-lg hover:text-[#3238F2]">Login</a>
         </div>
-        <button
-            class="hidden lg:flex items-center gap-2 border border-gray-400 rounded-lg py-2 px-5 hover:border-gray-600">
-            <img src="./Images/electron-icon.E8mrXtZM.png" alt="img1" class="w-6 h-6">
-            <span class="text-black font-bold">Electron Developers</span>
-            <i class="fa-solid fa-arrow-right text-gray-500"></i>
-        </button>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button
+                class="hidden lg:flex items-center gap-2 border border-gray-400 rounded-lg py-2 px-5 hover:border-gray-600">
+                <img src="./Images/electron-icon.E8mrXtZM.png" alt="img1" class="w-6 h-6">
+                <span class="text-black font-bold">Electron Developers</span>
+                <i class="fa-solid fa-arrow-right text-gray-500"></i>
+            </button>
+        </div>
 
         <!-- For medium and smaller devices it shows ham-burger button -->
         <button class="p-2 lg:hidden" onclick="handleMenu()">
@@ -52,13 +55,55 @@
                 <a href="#" class="font-semibold text-lg m-3 p-3 hover:bg-gray-50 rounded block">Login</a>
             </div>
             <div class="border border-gray-100"></div>
-            <button
-                class="flex items-center gap-2 p-5 hover:bg-gray-50 rounded">
+            <button class="flex items-center gap-2 p-5 hover:bg-gray-50 rounded">
                 <img src="./Images/electron-icon.E8mrXtZM.png" alt="img1" class="w-6 h-6">
                 <span class="text-black font-bold">Electron Developers</span>
             </button>
         </div>
     </nav>
+
+    <!-- Responsive main section of page -->
+    <main>
+        <!-- hero section -->
+        <div class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-red-50">
+            <!-- inside this div all body content is alligned acc. to screen size -->
+            <div class="max-w-4xl mx-auto px-6 pb-32 flex flex-col sm:items-center sm:text-center">
+                <div
+                    class="flex items-center gap-2 bg-[#FFF6CC] my-12 border border-yellow-100 rounded-lg w-fit px-4 py-1 shadow-md hover:shadow-lg hover:-translate-y-1 transition hover:border border-yellow-400 group">
+                    <div class="w-2 h-2 bg-yellow-400 border border-yellow-400 rounded-full"></div>
+                    <p class="text-yellow-800 font-medium">v0.35.0</p>
+                    <i
+                        class="fa-solid fa-arrow-right text-yellow-500 group-hover:translate-x-2 transition duration-300 group-hover:text-yellow-600"></i>
+                </div>
+                <div class="hidden sm:flex gap-5">
+                    <div class="flex items-center gap-2 text-gray-500">
+                        <i class="fa-solid fa-file text-sm"></i>
+                        <p class="text-lg">Code Optional</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-500">
+                        <i class="fa-regular fa-hand text-sm"></i>
+                        <p class="text-lg">Drag & drop builder</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-500">
+                        <i class="fa-solid fa-laptop text-sm"></i>
+                        <p class="text-lg">Windows, Mac, Linux</p>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-medium font-semibold leading-snug mt-5 sm:text-7xl font-lg font-extrabold">Web app
+                    to desktop app in minutes</h1>
+                <p class="text-xl mt-4 sm:text-3xl text-gray-600">Take your web app codebase and transform it into a
+                    cross platform desktop app with native functionality.</p>
+                <div class="mt-12 flex flex-col gap-4 sm:flex-row">
+                    <button
+                        class="bg-[#3238F2] text-white text-lg font-medium font-semibold px-8 py-3 rounded-lg shadow-sm hover:bg-[#3238F2] opacity-90">Download
+                        now</button>
+                    <button
+                        class="bg-white text-black text-lg font-medium font-semibold px-8 py-3 border border-gray-300 rounded-lg shadow-sm hover:border-gray-800">Read
+                        docs</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="./script.js"></script>
 
