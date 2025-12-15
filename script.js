@@ -4,7 +4,8 @@ function handleMenu() {
     NavDialog.classList.toggle('hidden');
 }
 
-const initialTranslate =  -48*4
+const initialTranslateLTR =  -48*4;
+const initialTranslateRTL = 36*4;
 
 function setupIntersectionObserver(element, isLTR, speed){
     const intersectionCallback = (entries) => {
@@ -27,7 +28,7 @@ function setupIntersectionObserver(element, isLTR, speed){
             totalTranslate = translateX + initialTranslateLTR;
         }
         else {
-            totalTranslate = -(translateX + initialTranslateRTL)
+            totalTranslate = -(translateX + initialTranslateRTL);
         }
         element.style.transform = `translateX(${totalTranslate}px)`;
     }
