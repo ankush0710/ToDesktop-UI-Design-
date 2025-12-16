@@ -9,7 +9,7 @@
     <title>ToDesktop</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body>
     <!-- Responsive navigation bar -->
     <nav class="md:bg-white p-5 flex justify-between items-center">
         <div class="flex flex-1 items-center gap-2">
@@ -65,7 +65,7 @@
     <!-- Responsive main section of page -->
     <main>
         <!-- hero section -->
-        <div class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-red-50">
+        <div class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-red-50 overflow-x-hidden">
             <!-- inside this div all body content is alligned acc. to screen size -->
             <div class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center">
                 <div
@@ -371,9 +371,16 @@
 
         <!-- Feature Section -->
         <div id="steps" class="max-w-7xl px-8 py-5 h-20 max-w-7xl mt-10 mx-auto">
-            <h3 class="text-5xl sm:font-semibold">How its works</h3>
-            <div class="rounded-xl border px-8 py-12 ">
-
+            <h3 class="text-5xl mb-10 sm:font-bold">How its works</h3>
+            <div class="rounded-xl border px-8 py-12 flex flex-col">
+                <div class="flex flex-col gap-6">
+                    <span class="border border-yellow-300 rounded-md w-fit px-3 py-1 text-yellow-800 bg-[#FFF6CC] font-semibold">Step 1</span>
+                    <h3 class="">Bootstrap straight from your web app</h3>
+                    <p>Copy and paste your web url into ToDesktop. Customise your app design, app icon and window frame UI with no code</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
