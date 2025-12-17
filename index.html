@@ -370,20 +370,152 @@
         </div>
 
         <!-- Feature Section -->
-        <div id="steps" class="max-w-7xl px-8 py-5 h-20 max-w-7xl mt-10 mx-auto">
+        <div id="steps" class="flex flex-col gap-6 max-w-7xl px-8 py-5 h-20 mt-10 mx-auto">
             <h3 class="text-5xl mb-10 sm:font-bold">How its works</h3>
-            <div class="rounded-xl border px-8 py-12 flex flex-col">
-                <div class="flex flex-col gap-6">
-                    <span class="border border-yellow-300 rounded-md w-fit px-3 py-1 text-yellow-800 bg-[#FFF6CC] font-semibold">Step 1</span>
-                    <h3 class="">Bootstrap straight from your web app</h3>
-                    <p>Copy and paste your web url into ToDesktop. Customise your app design, app icon and window frame UI with no code</p>
-                    <ul>
-                        <li></li>
+            <div id="step-1" class="flex flex-col rounded-xl border border-gray-200 px-8 py-12 lg:flex-row gap-6">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 rounded-md w-fit px-3 py-1 text-yellow-800 bg-[#FFF6CC] font-semibold">Step
+                        1</span>
+                    <h3 class="text-4xl font-semibold">Bootstrap straight from your web app</h3>
+                    <p class="text-lg">Copy and paste your web url into ToDesktop. Customise your app design, app icon
+                        and window frame UI with no code</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Multiple
+                                windows</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Customisable
+                                menus</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Menubar/tray
+                                menus</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Launch on
+                                startup</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Offline Support</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Tabs (Macs only)</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="pt-12 lg:ml-8">
+                    <img src="./Images/feature-image-1.png" alt="image-1">
+                </div>
+            </div>
+            <div id="step-2" class="flex flex-col rounded-xl border border-gray-200 px-8 py-12 lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 rounded-md w-fit px-3 py-1 text-yellow-800 bg-[#FFF6CC] font-semibold">Step
+                        2</span>
+                    <h3 class="text-4xl font-semibold">Add desktop code to customise your web app</h3>
+                    <p class="text-lg">No need to create a new repository, just add code from our desktop APIs to your
+                        codebase and get access to system level functionality.</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Native
+                                notifications</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Global
+                                keyboard shortcuts
+                            </a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Application
+                                menu</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Context
+                                menu</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Dock/Icon</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Isolated browser views</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">File system access</a>
+                        </li>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">…plus more APIs in our docs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-12 lg:ml-8">
+                    <img src="./Images/feature-image-2.png" alt="image-1">
+                </div>
+            </div>
+            <div id="step-3" class="flex flex-col rounded-xl border border-gray-200 px-8 py-12 lg:flex-row">
+                <div class="flex flex-col gap-6 lg:w-1/2">
+                    <span
+                        class="border border-yellow-300 rounded-md w-fit px-3 py-1 text-yellow-800 bg-[#FFF6CC] font-semibold">Step
+                        3</span>
+                    <h3 class="text-4xl font-semibold">Publish 🚀</h3>
+                    <p class="text-lg">One-click will publish your desktop app to your customers and give you a download
+                        link to put on your website.</p>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Super-fast
+                                global CDN</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Download
+                                links on your domain</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Magic
+                                universal links</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg border-b border-opacity-30 hover:border-opacity-90">Download
+                                analytics</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Manage version numbers</a>
+                        </li>
+                        <li class="flex gap-4">
+                            <i class="fa-solid fa-check text-gray-500"></i>
+                            <a href="#" class="text-lg">Native installers for all platforms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-12 lg:ml-8">
+                    <img src="./Images/feature-image-3.png" alt="image-1">
                 </div>
             </div>
         </div>
 
+        <div class="max-w-7xl px-8 py-5 h-20 max-w-7xl mt-10 mx-auto">
+            <h3 class="text-5xl mb-10 sm:font-bold">How its works</h3>
+        </div>
         <div class="h-[1000px]"></div>
     </main>
 </body>
