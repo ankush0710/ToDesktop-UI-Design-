@@ -515,7 +515,7 @@
         </div>
 
         <!-- Bento grid section -->
-        <div class="max-w-7xl px-8 py-12 mt-10 mx-auto lg:px-6">
+        <div class="max-w-7xl px-8 py-10 mt-10 mx-auto lg:px-6">
             <h2 class="text-5xl mb-10 font-bold max-w-2xl leading-normal">ToDesktop handles the details</h2>
             <div id="grid-container" class="flex flex-col gap-6 lg:grid lg:grid-cols-3" style="grid-auto-rows: 96px;">
                 <div
@@ -576,11 +576,11 @@
         </div>
 
         <!-- Princing section  -->
-        <div id="pricing" class="max-w-6xl px-8 py-12 mt-10 mx-auto lg:px-6">
+        <div id="pricing" class="max-w-7xl px-8 py-10 mt-10 mx-auto lg:px-6">
             <h2 class="text-5xl mb-10 font-bold max-w-2xl leading-normal">Choose a plan that fits your needs</h2>
             <div class="flex flex-col gap-6 mt-6 lg:flex lg:flex-row">
                 <div
-                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 lg:border-none lg:bg-slate-100">
+                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 lg:border-none lg:bg-slate-100 shadow-md">
                     <h3 class="text-4xl font-semibold">Free</h3>
                     <p class="text-lg text-gray-500">For personal use or testing your app before deploying to customers.
                     </p>
@@ -608,7 +608,7 @@
                         Started</button>
                 </div>
                 <div
-                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 lg:border-none lg:bg-slate-100">
+                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 lg:border-none lg:bg-slate-100 shadow-xl">
                     <h3 class="text-4xl font-semibold">Essential</h3>
                     <p class="text-lg text-gray-500">For simple desktop apps.</p>
                     <p class="flex items-center gap-1 text-lg"><span class="text-[25px] font-semibold">$100
@@ -637,7 +637,7 @@
                         Started</button>
                 </div>
                 <div
-                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 relative lg:border-none lg:bg-slate-100">
+                    class="flex flex-col flex-1 gap-4 border border-gray-300 rounded-xl bg-gray-100 px-5 py-8 relative lg:border-none lg:bg-slate-100 shadow-md">
                     <p
                         class="text-blue-500 text-sm font-semibold bg-indigo-100 rounded-full w-fit px-4 py-2 absolute right-5 top-0 -translate-y-1/2">
                         Most Popular</p>
@@ -673,8 +673,246 @@
         </div>
 
         <!-- FAQ Section  -->
+        <div id="FAQ-section" class="max-w-7xl px-8 py-10 mt-10 mx-auto lg:px-6">
+            <h2 class="text-5xl mb-10 font-bold max-w-2xl leading-normal">FAQ's</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-1">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-1" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-2">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-2" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-3">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-3" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-4">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-4" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-5">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-5" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-6">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-6" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+                <div class="rounded-xl cursor-pointer border border-gray-200 bg-gray-50 p-6">
+                    <dt class="flex justify-between items-center" aria-controls="faq-7">
+                        <p class="text-lg font-semibold">Is ToDesktop For Me?</p>
+                        <i class="fa-solid fa-angle-up text-xl -rotate-180 transition"></i>
+                    </dt>
+                    <dd id="faq-7" class="hidden text-lg mt-6">
+                        <p>That depends! If you would like to distribute your web app to your users as a downloadable
+                            desktop app then ToDesktop is for you.<br><br>
+
+                            If you want to make a desktop app of a website for your personal use, ToDesktop is overkill.<br><br>
+
+                            What’s the difference? There are extra considerations when creating a desktop app for
+                            distribution to customers. Here are the top 3:<br><br>
+
+                            <span class="font-bold">Installer</span> — Mac users expect a “drag to applications” DMG file. Windows users expect an
+                            installer and they also expect to be able to uninstall it from the control panel.<br>
+                            
+                            <span class="font-bold">Code Signing</span> — By default Windows Authenticode and Apple Gatekeeper will stop your desktop
+                            app opening.Signing your code allows your app to open without issues.<br>
+
+                            <span class="font-bold">Auto-update</span> — There is a web browser running “underneath” your desktop app. It’s important
+                            to keep this updated for two reasons.<br><br>
+                            <span class="text-gray-500">1.</span> issues + vulnerabilities can occur.Auto-update ensures that they stay patched over
+                            time.<br>
+                            <span class="text-gray-500">2.</span> You don’t want to be stuck supporting an old web browser in 5 years from now. This can
+                            happen if your desktop app’s underlying web browser hasn’t updated.<br><br>
+                            ToDesktop offers these features as standard! Saving you a ton of development time and
+                            effort.
+
+
+                        </p>
+                    </dd>
+                </div>
+            </div>
+        </div>
+
         
-        <div class="h-[1000px]"></div>
     </main>
 </body>
 <script src="./script.js"></script>
